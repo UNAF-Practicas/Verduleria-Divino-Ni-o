@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verdulería y Frutería</title>
+
+    <!-- Enlaza a Bootstrap desde un CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Agrega tu archivo CSS personalizado -->
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand" href="#">Verdulería y Frutería</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#productos">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#acerca">Acerca de nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Encabezado de la página -->
+    <header id="inicio" class="bg-primary text-white text-center py-5">
+        <h1>Bienvenidos a nuestra Verdulería y Frutería</h1>
+        <p>Productos frescos y saludables a tu alcance</p>
+    </header>
+
+    <!-- Productos -->
+    <div id="productos" class="container mt-5">
+        <h2 class="text-center mb-4">Nuestros Productos</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="frutas/fruta1.jpg" class="card-img-top" alt="Manzanas">
+                    <div class="card-body">
+                        <h5 class="card-title">Manzanas</h5>
+                        <p class="card-text">Manzanas frescas y deliciosas.</p>
+                        <p class="card-text">$2.00 por kg</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <!-- Repite esta estructura para más productos -->
+            </div>
+            <div class="col-md-4">
+                <!-- Repite esta estructura para más productos -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Acerca de nosotros -->
+    <div id="acerca" class="container mt-5">
+        <h2 class="text-center">Acerca de nosotros</h2>
+        <p>Somos una verdulería y frutería comprometida con la calidad y frescura de nuestros productos. Desde 1990, hemos proporcionado a nuestros clientes una amplia variedad de frutas y verduras frescas de la mejor calidad.</p>
+    </div>
+
+    <!-- Horarios de Atención -->
+    <div class="container mt-5">
+        <h2 class="text-center">Horarios de Atención</h2>
+        <p class="text-center">Estamos abiertos de lunes a sábado de 8:00 AM a 6:00 PM. ¡Visítanos!</p>
+    </div>
+
+    <!-- Galería de Imágenes -->
+    <div class="container mt-5">
+        <h2 class="text-center">Galería de Imágenes</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="galeria/img1.jpg" class="img-fluid mb-4" alt="Imagen 1">
+            </div>
+            <div class="col-md-4">
+                <!-- Repite esta estructura para más imágenes de la galería -->
+            </div>
+            <div class="col-md-4">
+                <!-- Repite esta estructura para más imágenes de la galería -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Contacto -->
+    <div id="contacto" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">Contáctanos</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Información de Contacto</h3>
+                    <p><strong>Dirección:</strong> 123 Calle Principal, Ciudad</p>
+                    <p><strong>Teléfono:</strong> (123) 456-7890</p>
+                    <p><strong>Correo Electrónico:</strong> info@verduleriayfruteria.com</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Formulario de Contacto</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="correo">Correo Electrónico:</label>
+                            <input type="email" class="form-control" id="correo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mapa de Ubicación (Google Maps) -->
+    <div class="container mt-5">
+        <h2 class="text-center">Ubicación</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d-86.1234567!3d39.9876543!4m5!3m4!1s0x0:0x0!8m2!
